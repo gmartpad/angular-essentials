@@ -1,6 +1,6 @@
 # AngularEssentials
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+First project of the "Angular - The Complete Guide" course by Maximilian Schwarzmüller, coded along by Gabriel Martins Padoin. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
 ## Development server
 
