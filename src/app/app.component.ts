@@ -14,4 +14,8 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   title = 'angular-essentials';
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    alert('id: ' + id)
+  }
 }
