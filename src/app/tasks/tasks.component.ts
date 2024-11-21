@@ -9,6 +9,6 @@ import { User } from '../app.component';
   styleUrl: './tasks.component.less'
 })
 export class TasksComponent {
-  @Input({ required: true }) user!: User;
+  @Input() user?: User;
 
 }

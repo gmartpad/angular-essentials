@@ -21,10 +21,10 @@ export interface User {
 export class AppComponent {
   title = 'angular-essentials';
   users: User[] = DUMMY_USERS;
-  selectedUser: User = DUMMY_USERS[0]
+  selectedUser?: User = DUMMY_USERS[0]
 
   onSelectUser(id: string) {
-    const newSelectedUser: User = DUMMY_USERS.find(user => user.id === id)!
+    const newSelectedUser: User | undefined = DUMMY_USERS.find(user => user.id === id)
     this.selectedUser = newSelectedUser
   }
 }
