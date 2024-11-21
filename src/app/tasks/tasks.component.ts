@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { User } from '../app.component';
+import { User } from '../user/user.component';
 
 @Component({
   selector: 'app-tasks',
