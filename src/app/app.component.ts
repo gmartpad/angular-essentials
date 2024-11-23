@@ -15,7 +15,7 @@ import { TasksComponent } from "./tasks/tasks.component";
 export class AppComponent {
   title = 'angular-essentials';
   users: User[] = DUMMY_USERS;
-  selectedUser?: User = DUMMY_USERS[0]
+  selectedUser?: User
 
   onSelectUser(id: string) {
     const newSelectedUser: User | undefined = DUMMY_USERS.find(user => user.id === id)
