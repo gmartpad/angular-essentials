@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { User } from '../user/user.component';
-import { Task, TaskComponent } from "../task/task.component";
+import { TaskComponent } from "../task/task.component";
+import { type Task } from '../task/task.model';
+import { type User } from '../user/user.model';
 
 @Component({
   selector: 'app-tasks',
