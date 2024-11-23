@@ -11,9 +11,11 @@
       </li>
     }
   </ul>
-  <div>
+  @if (selectedUser) {
     <app-tasks [user]="selectedUser"/>
-  </div>
+  } @else {
+    <h2 id="fallback">Select a user to see their tasks!</h2>
+  }
 </main>
 
 <router-outlet></router-outlet>
