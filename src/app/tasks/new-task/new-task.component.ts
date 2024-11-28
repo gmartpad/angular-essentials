@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-new-task',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './new-task.component.less'
 })
 export class NewTaskComponent {
+  @Output() newTaskDialogVisibility = new EventEmitter<boolean>()
 
+  onCloseTask() {
+    this.newTaskDialogVisibility.emit(false)
+  }
 }
