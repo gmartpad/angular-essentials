@@ -1,5 +1,8 @@
 @if (isAddingTask) {
-    <app-new-task (newTaskDialogVisibility)="onSetIsAddingTask($event)" />
+    <app-new-task 
+        (newTaskDialogVisibility)="onSetIsAddingTask($event)"
+        (newTaskAdd)="onAddTask($event)"
+    />
 }
 
 <section id="tasks">
@@ -9,7 +12,6 @@
             <button (click)="onStartAddTask()">Add Task</button>
         </menu>
     </header>
-
     <ul>
         @for(task of selectedUserTasks; track task.id) {
             <li>

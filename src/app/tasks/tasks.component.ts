@@ -3,6 +3,7 @@ import { TaskComponent } from "../task/task.component";
 import { type Task } from '../task/task.model';
 import { type User } from '../user/user.model';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { type NewTaskData } from './new-task/new-task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -52,5 +53,16 @@ export class TasksComponent {
 
   onSetIsAddingTask(value: boolean) {
     this.isAddingTask = value
+  }
+
+  onAddTask(taskData: NewTaskData) {
+    this.tasks.unshift({
+      id: new Date().getTime().toString(),
+      userId: this.user?.id!,
+      title: taskData.title,
+      summary: taskData.summary,
+      dueDate: taskData.date
+    })
+    this.isAddingTask = false
   }
 }
