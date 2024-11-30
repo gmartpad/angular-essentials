@@ -17,4 +17,8 @@ export class NewTaskComponent {
   onCloseTask() {
     this.newTaskDialogVisibility.emit(false)
   }
+
+  onSubmit() {
+    
+  }
 }
