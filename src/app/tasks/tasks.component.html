@@ -1,7 +1,7 @@
 @if (isAddingTask) {
     <app-new-task 
         (newTaskDialogVisibility)="onSetIsAddingTask($event)"
-        (newTaskAdd)="onAddTask($event)"
+        [user]="user"
     />
 }
 
